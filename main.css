@@ -2,4 +2,634 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  margin-left: 100px;
+  background-color: #d7dbdb;
 }
+
+header{
+  background-color: #f8f8f8;
+}
+
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: -10;
+}
+
+.text-overlay{
+  width: 800px;
+  position: absolute;
+  top: 200px;
+  color: white;
+  font-size: 110px;
+  z-index: 100;
+  margin-left: 26%;
+  margin-top: 7%;
+  font-weight: 700;
+}
+
+.red {
+  font-size: 1em;
+  color: #D41217;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.red:hover {
+  font-size: 1em;
+  color: #D41217;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+hr.new1 {
+  border-top: 1px solid #D41217;
+}
+
+.language-dropdown select {
+  padding: 4px;
+  font-size: 16px;
+  background-color: #D41217;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.language-dropdown select:focus {
+  outline: none;
+  border-color: #D41217;
+}
+
+.language-dropdown select::-ms-expand {
+  display: none;
+}
+
+.language-dropdown select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+}
+
+
+
+.navbar {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.subnav {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f8f8;
+  min-width: 160px;
+  z-index: 100;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+  width: 1430px;
+  margin-left: -220%;
+  align-items: center;
+
+}
+
+.menu-column {
+  float: left;
+  width: 200px;
+  padding: 10px;
+}
+
+.menu-column a {
+  display: block;
+  padding: 4px;
+  color: #000;
+}
+
+.menu-column a:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+
+.nav-link-btn {
+  background-color: #D41217;
+  border-radius: 10%;
+  color: white;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.nav-link-btn:hover {
+  background-color: #b70505;
+  border-radius: 10%;
+  color: white;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+hr {
+  background-color: #FF0000;
+  height: 2px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: max-content;
+}
+
+.menu-item{
+  color: #363b3d;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.menu-item:hover{
+  color: #D41217;
+  font-weight: 500;
+  background-color: #f2afaf;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.column-item {
+  font-weight: 500;
+}
+
+.column-item:hover {
+  color: #363b3d;
+}
+
+.subitem {
+  font-weight: 200;
+}
+
+.subitem:hover {
+  font-weight: 200;
+  color: #363b3d;
+}
+
+.RestaurangCasino {
+  background-color: #8961A6;
+  color: white;
+  text-align: center;
+  height: 400px;
+  padding: 20px;
+  box-shadow: #363b3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Yggdrasil {
+  background-color: #F39332;
+  color: white;
+  text-align: center;
+  height: 400px;
+  padding: 20px;
+}
+
+.ComeOn {
+  background-color: #8DB524;
+  color: white;
+  height: 400px;
+  padding: 20px;
+}
+
+.Cherry {
+  background-color: #D41217;
+  color: white;
+  text-align: center;
+  height: 400px;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-ComeOn {
+  background-color: #8DB524;
+  width: 280px;
+  height: 60px;
+}
+
+.bottom-ComeOn:hover {
+  background-color: #628508;
+  width: 290px;
+  height: 60px;
+}
+
+.bottom-Yggdrasil {
+  background-color: #F39332;
+  width: 280px;
+  height: 60px;
+}
+
+.bottom-Yggdrasil:hover {
+  background-color: #ac5e10;
+  width: 290px;
+  height: 60px;
+}
+
+.bottom-RestaurangCasino {
+  background-color: #8961A6;
+  width: 280px;
+  height: 60px;
+}
+
+.bottom-RestaurangCasino:hover {
+  background-color: #542675;
+  width: 290px;
+  height: 60px;
+}
+
+.GameLounge {
+  background-color: #41BFED;
+  width: 280px;
+  height: 60px;
+}
+
+.GameLounge:hover{
+  background-color: #2496c0;
+  width: 290px;
+  height: 60px;
+}
+
+.GreyDark {
+  background-color: #C8C8CA;
+  width: 280px;
+  height: 60px;
+  align-items: center;
+  
+}
+
+.GreyDark:hover {
+  background-color: #858586;
+  width: 290px;
+  height: 60px;
+  align-items: center;
+  
+}
+
+.small {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+main h5 {
+  font-size: 2.7rem;
+}
+
+.btn-white {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 80px 7px 80px;
+  background-color: white;
+  border-radius: 5px;
+  background-position: 90% center!important;
+  background-repeat: no-repeat!important;
+  text-decoration: none!important;
+  box-shadow: #363b3d;
+  align-items: flex-end;
+}
+
+.btn-white:hover {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 82px 9px 82px;
+  background-color: white;
+  border-radius: 5px;
+  background-position: 90% center!important;
+  background-repeat: no-repeat!important;
+  text-decoration: none!important;
+  box-shadow: #363b3d;
+  align-items: flex-end;
+}
+
+.cherry-red {
+  color: #D41217;
+}
+
+.cherry-red:hover {
+  color: #b5040a;
+}
+
+.green {
+  color: #8DB524;
+}
+.green:hover{
+  color: #648a04;
+}
+
+.yellow{
+  color: #F39332;
+}
+
+.yellow:hover{
+  color: #ed7f11;
+}
+
+.purple {
+  color: #8961A6;
+}
+
+.purple:hover {
+  color: #6e3497;
+}
+
+
+.btn-red {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 7px 80px 7px 80px;
+  margin-bottom: 20px;
+  background-color: #D41217;
+  border-radius: 5px;
+  background-position: 90% center!important;
+  background-repeat: no-repeat!important;
+  text-decoration: none!important;
+  transition-duration: 0.5s;
+  box-shadow: #363b3d;
+  align-items: bottom;
+  width: 200px;
+}
+
+.btn-red:hover {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 7px 80px 7px 80px;
+  margin-bottom: 20px;
+  background-color: #9e060b;
+  border-radius: 5px;
+  background-position: 90% center!important;
+  background-repeat: no-repeat!important;
+  text-decoration: none!important;
+  transition-duration: 0.5s;
+  box-shadow: #363b3d;
+  align-items: bottom;
+  width: 200px;
+}
+
+.fullwidth {
+  background-color: white;
+  height: 410px;
+  padding: -20px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.background-ComeOn{
+  background-color: #e6f1cc;
+  color: #8DB524;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.background-RestaurangCasino{
+  display: flex;
+  background-color: #e1d1ec;
+  color: #8961A6;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.background-Yggdrasil{
+  background-color: #f3d8bd;
+  color: #f2871c;
+  font-weight: 500;
+  font-size: 18px;
+  
+}
+
+.background-GameLounge{
+  background-color: #daebf8;
+  color: #15baf6;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.background-GreyDark{
+  background-color: #cccdcd;
+  color: #363b3d;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.background-Cherry{
+  background-color: #ddaaac;
+  color: #D41217;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+footer {
+ background-color: #f9e2e3;
+
+}
+
+footer a {
+  color: #363b3d;
+}
+
+footer a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+.menu-item-s {
+  display: block;
+  margin-bottom: 5px;
+  color: #363b3d;
+}
+
+.links{
+  color: #D41217;
+  margin-bottom: 3%;
+}
+
+.text{
+  padding: 30px;
+  margin-left: 20px;
+  position: absolute;
+
+}
+
+.half-col {
+  height: 200px;
+
+}
+
+.half-col-2 {
+  height: 200px;
+  margin-left: 50%;
+}
+
+.half-col-4 {
+  height: 200px;
+  margin-left: 50%;
+}
+
+.half-col-6 {
+  height: 200px;
+  margin-left: 50%;
+}
+
+
+
+main h2{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
+main h4 {
+  color: #D41217;
+  font-size: 1em;
+  align-self: center;
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+}
+
+
+.social {
+  width: 290px;
+  align-items: center;
+}
+
+
+footer h1 {
+  color: #D41217;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+hr.new2{
+  border-top: 1px solid #D41217;
+  width: 1100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.group-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  line-height: 27px;
+  padding: 5px;
+}
+
+.column {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .column {
+    flex-basis: auto;
+    max-width: none;
+  }
+}
+
+main h1 {
+  color:#D41217;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.img-col-1 {
+  width: 700px;
+  height: 407px;
+  margin-left: 6%;
+  margin-top: -14%;
+}
+
+.img-col-2 {
+  width: 655px;
+  height: 407px;
+  margin-left: -93%;
+  margin-top: -14%;
+}
+
+.img-col-3 {
+  width: 700px;
+  height: 407px;
+  margin-left: 48%;
+  margin-top: -14%;
+}
+
+.img-col-4 {
+  width: 655px;
+  height: 407px;
+  margin-left: -54%;
+  margin-top: -14%;
+}
+
+.img-col-5 {
+  width: 715px;
+  height: 407px;
+  margin-left: 49%;
+  margin-top: -14%;
+}
+
+.img-col-6 {
+  width: 655px;
+  height: 407px;
+  margin-left: -54%;
+  margin-top: -14%;
+}
+
+.logo-bottom{
+  margin-left: 40%;
+  margin-top: 4%;
+  height: 60px;
+}
+
+
+
